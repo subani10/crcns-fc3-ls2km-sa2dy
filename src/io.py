@@ -36,3 +36,16 @@ def data_attributes(subject):
     shape = dset.shape
     data_type = dset.dtype
     return file,dset,shape,data_type
+
+def select_data(subject)
+    """
+    This function loads the data, same as before. Then, with the square brackets we can select a 
+    choice of rows or columns that we would like to see in particular in the data. We select rows 
+    using slicing, from the first row we want to see to the last([:]), with the last being non-inclusive,
+    returing a list of wanted rows. For selecting columns, we create a list of specific columns we want to 
+    focus on. We can compare/contrast two different columns that we want to focus on in the data.  
+    """
+    data= load.data(subject) 
+    row=data[1:2]
+    column=data["//whatever column we want to select"]
+    multiple_columns=data[["//","//"]]
